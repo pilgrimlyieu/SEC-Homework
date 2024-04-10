@@ -1,0 +1,13 @@
+{
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/proj1/224-2024spring_softwareengineering_python_proj1/src",
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.callArgumentNames": "partial",
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": false,
+    "pylint.args": [
+        "--disable=W0611,W0613,W0105,C0301,C0304,C0415",
+    ]
+}
