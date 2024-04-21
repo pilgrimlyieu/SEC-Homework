@@ -111,19 +111,12 @@ def balanced(m):
     False
     """
     assert is_mobile(m)
-    a = True
-    def j(m):
-        nonlocal a
-        if length(left(m)) * total_weight(end(left(m))) != length(right(m)) * total_weight(end(right(m))):
-            a = False
-        if not is_planet(end(left(m))):
-            j(end(left(m)))
-        if not is_planet(end(right(m))):
-            j(end(right(m)))
-        if is_planet(m):
-            return
-    j(m)
-    return a
+    b = length(left(m)) * total_weight(end(left(m))) == length(right(m)) * total_weight(end(right(m)))
+    if b and is_mobile(end(left(m))):
+        b = b and balanced(end(left(m)))
+    if b and is_mobile(end(right(m))):
+        b = b and balanced(end(right(m)))
+    return b
 
 from re import L
 from ADT import tree, label, branches, is_leaf, print_tree
