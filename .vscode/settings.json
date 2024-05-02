@@ -9,5 +9,13 @@
     "python.analysis.inlayHints.variableTypes": false,
     "pylint.args": [
         "--disable=W0611,W0613,W0105,C0301,C0304,C0415",
-    ]
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false,
+        "python": "false"
+    },
+    "github.copilot.editor.enableAutoCompletions": false,
 }
