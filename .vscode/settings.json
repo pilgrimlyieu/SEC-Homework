@@ -2,6 +2,7 @@
     "python.analysis.extraPaths": [
         "${workspaceFolder}/Python/proj1/224-2024spring_softwareengineering_python_proj1/src",
         "${workspaceFolder}/Python/proj2/227-2024spring_softwareengineering_python_proj2/src",
+        "${workspaceFolder}/Python/proj3/240-2024spring_softwareengineering_python_proj3/src",
     ],
     "python.analysis.autoImportCompletions": true,
     "python.analysis.inlayHints.callArgumentNames": "partial",
@@ -16,7 +17,9 @@
         "plaintext": false,
         "markdown": true,
         "scminput": false,
-        "python": "false"
+        "python": false,
+        // "java": false,
     },
-    "github.copilot.editor.enableAutoCompletions": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "java.configuration.updateBuildConfiguration": "interactive",
 }
